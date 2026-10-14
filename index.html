@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>جزوه پودمان اول؛ دسته‌بندی و انتخاب شبکه</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f5f7fb;--card:#fff;--tx:#1b2433;--mut:#5b6b82;--pri:#2563eb;--bd:#dbe3ef;--ok:#16a34a;--bad:#dc2626;--hl:#e8f0ff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--card:#18223a;--tx:#e6ecf7;--mut:#9fb0c9;--pri:#6ea0ff;--bd:#2a3a5c;--ok:#4ade80;--bad:#f87171;--hl:#1f2f55}}
+:root[data-theme="dark"]{--bg:#0f1624;--card:#18223a;--tx:#e6ecf7;--mut:#9fb0c9;--pri:#6ea0ff;--bd:#2a3a5c;--ok:#4ade80;--bad:#f87171;--hl:#1f2f55}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Vazirmatn,Tahoma,"Segoe UI",sans-serif;line-height:2}
+header{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;padding:32px 16px;text-align:center}
+header h1{margin:0 0 6px;font-size:1.6rem}header p{margin:0;opacity:.9}
+nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:12px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:5}
+nav a{color:var(--pri);text-decoration:none;font-size:.85rem;padding:2px 10px;border:1px solid var(--bd);border-radius:99px;background:var(--card)}
+main{max-width:820px;margin:0 auto;padding:16px}
+section{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px 20px;margin:16px 0}
+h2{margin:0 0 8px;color:var(--pri);font-size:1.25rem}
+ul{padding-inline-start:22px;margin:6px 0}
+.exam{background:var(--hl);border-inline-start:4px solid var(--pri);padding:8px 12px;border-radius:8px;margin:10px 0;font-size:.95rem}
+.exam b{color:var(--pri)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:420px}
+th,td{border:1px solid var(--bd);padding:6px 10px;text-align:center}th{background:var(--hl)}
+.q{border:1px solid var(--bd);border-radius:10px;padding:10px 14px;margin:12px 0}
+.q p{margin:0 0 6px;font-weight:700}
+.q label{display:block;padding:3px 8px;border-radius:8px;cursor:pointer}
+.q label.ok{background:color-mix(in srgb,var(--ok) 22%,transparent)}
+.q label.bad{background:color-mix(in srgb,var(--bad) 22%,transparent)}
+button{font:inherit;background:var(--pri);color:#fff;border:0;border-radius:10px;padding:8px 22px;cursor:pointer}
+#res{font-weight:700;font-size:1.1rem;margin-top:12px}
+footer{text-align:center;padding:24px 16px;color:var(--mut)}footer b{color:var(--tx)}
+</style>
+</head>
+<body>
+<header>
+<h1>جزوه و آزمون پودمان اول</h1>
+<p>دانش فنی تخصصی · رشته شبکه و نرم‌افزار رایانه · دسته‌بندی و انتخاب شبکه</p>
+</header>
+<nav><a href="#s1">مفهوم شبکه</a><a href="#s2">اجزا</a><a href="#s3">مدل سرویس‌دهی</a><a href="#s4">وسعت</a><a href="#s5">توپولوژی</a><a href="#s6">رسانه</a><a href="#s7">انتخاب شبکه</a><a href="#quiz">آزمون</a></nav>
+<main>
+<section id="s1"><h2>۱) شبکه رایانه‌ای چیست؟</h2>
+<p>شبکه رایانه‌ای مجموعه‌ای از دو یا چند رایانه و تجهیزات است که با رسانهٔ ارتباطی به هم متصل می‌شوند تا منابع (فایل، چاپگر، اینترنت، برنامه) را به اشتراک بگذارند و اطلاعات مبادله کنند.</p>
+<ul><li>مزایا: اشتراک منابع، کاهش هزینه، ارتباط سریع، مدیریت و پشتیبان‌گیری متمرکز.</li><li>معایب: هزینهٔ راه‌اندازی، نیاز به مدیر شبکه، خطرات امنیتی (ویروس، نفوذ).</li></ul>
+<div class="exam"><b>نکتهٔ امتحانی:</b> هدف اصلی شبکه «اشتراک منابع و تبادل اطلاعات» است.</div></section>
+
+<section id="s2"><h2>۲) اجزای شبکه</h2>
+<ul><li><b>گره (Node):</b> هر دستگاه متصل به شبکه (رایانه، چاپگر، موبایل).</li>
+<li><b>رسانهٔ انتقال:</b> کابل یا امواج که داده را منتقل می‌کند.</li>
+<li><b>کارت شبکه (NIC):</b> رابط اتصال رایانه به شبکه؛ دارای آدرس فیزیکی MAC.</li>
+<li><b>تجهیزات ارتباطی:</b> هاب، سوئیچ، مسیریاب (روتر)، مودم، نقطهٔ دسترسی (AP).</li>
+<li><b>نرم‌افزار و پروتکل:</b> سیستم‌عامل شبکه و قواعد ارتباط مانند TCP/IP.</li></ul>
+<p><b>آدرس IP:</b> شناسهٔ منطقی هر دستگاه در شبکه؛ IPv4 دارای ۳۲ بیت (چهار بخش ۸ بیتی) و IPv6 دارای ۱۲۸ بیت است.</p>
+<div class="exam"><b>نکتهٔ امتحانی:</b> MAC آدرس فیزیکی (روی کارت شبکه) و IP آدرس منطقی است. سوئیچ بر پایهٔ MAC و روتر بر پایهٔ IP تصمیم می‌گیرد.</div></section>
+
+<section id="s3"><h2>۳) انواع شبکه بر اساس مدل سرویس‌دهی</h2>
+<div class="tw"><table><tr><th>ویژگی</th><th>نظیر به نظیر (P2P)</th><th>کارخواه/خدمت‌گزار (Client/Server)</th></tr>
+<tr><td>مدیریت</td><td>غیرمتمرکز</td><td>متمرکز (سرور)</td></tr>
+<tr><td>تعداد رایانه</td><td>کم (معمولاً تا ۱۰)</td><td>کم تا بسیار زیاد</td></tr>
+<tr><td>هزینه</td><td>کم</td><td>بیشتر (سرور و مدیر)</td></tr>
+<tr><td>امنیت</td><td>کم‌تر</td><td>بیشتر</td></tr>
+<tr><td>نمونه</td><td>شبکهٔ خانگی یا اتاق کوچک</td><td>سازمان، مدرسه، شرکت</td></tr></table></div>
+<div class="exam"><b>نکتهٔ امتحانی:</b> در P2P هر رایانه هم‌زمان می‌تواند کارخواه و خدمت‌گزار باشد؛ در Client/Server سرور منابع را ارائه می‌دهد و کارخواه درخواست می‌کند.</div></section>
+
+<section id="s4"><h2>۴) انواع شبکه بر اساس وسعت جغرافیایی</h2>
+<div class="tw"><table><tr><th>نوع</th><th>نام کامل</th><th>محدوده</th></tr>
+<tr><td>PAN</td><td>Personal Area Network</td><td>اطراف یک فرد (چند متر)، مثل بلوتوث</td></tr>
+<tr><td>LAN</td><td>Local Area Network</td><td>اتاق، ساختمان، مدرسه</td></tr>
+<tr><td>MAN</td><td>Metropolitan Area Network</td><td>یک شهر</td></tr>
+<tr><td>WAN</td><td>Wide Area Network</td><td>کشور، قاره، جهان (مانند اینترنت)</td></tr></table></div>
+<ul><li><b>اینترنت:</b> شبکهٔ عمومی جهانی. <b>اینترانت:</b> شبکهٔ خصوصی سازمان با فناوری اینترنت. <b>اکسترانت:</b> اینترانت با دسترسی محدود برای افراد بیرون سازمان.</li></ul>
+<div class="exam"><b>نکتهٔ امتحانی:</b> هرچه وسعت بیشتر شود، سرعت معمولاً کم‌تر و هزینه و نرخ خطا بیشتر می‌شود.</div></section>
+
+<section id="s5"><h2>۵) توپولوژی (ساختار اتصال)</h2>
+<ul><li><b>گذرگاه (Bus):</b> یک کابل مشترک؛ ارزان ولی قطع کابل اصلی کل شبکه را از کار می‌اندازد.</li>
+<li><b>ستاره (Star):</b> اتصال همه به هاب/سوئیچ مرکزی؛ رایج‌ترین ساختار، عیب‌یابی آسان؛ خرابی مرکز = توقف شبکه.</li>
+<li><b>حلقه (Ring):</b> هر گره به دو همسایه وصل است و داده در یک جهت می‌چرخد.</li>
+<li><b>مش (Mesh):</b> اتصال چندگانه بین گره‌ها؛ بیشترین قابلیت اطمینان و بیشترین هزینه.</li>
+<li><b>درختی (Tree):</b> ترکیب چند ستاره به صورت سلسله‌مراتبی.</li></ul>
+<div class="exam"><b>نکتهٔ امتحانی:</b> تعداد خط در مش کامل برای n گره برابر n(n−1)/2 است. مثلاً ۵ گره ← ۱۰ خط.</div></section>
+
+<section id="s6"><h2>۶) رسانه‌های انتقال</h2>
+<ul><li><b>کابل زوج سیم تابیده (UTP/STP):</b> ارزان و پرکاربرد؛ طول مجاز هر قطعه ۱۰۰ متر؛ با رابط RJ-45.</li>
+<li><b>کابل هم‌محور (Coaxial):</b> قدیمی‌تر، مقاوم‌تر در برابر نویز.</li>
+<li><b>فیبر نوری:</b> انتقال نور، سرعت و فاصلهٔ بسیار زیاد، بی‌اثر در برابر نویز الکترومغناطیسی؛ گران‌تر.</li>
+<li><b>بی‌سیم:</b> امواج رادیویی (Wi-Fi)، مادون قرمز، ریزموج، ماهواره؛ سهولت جابه‌جایی ولی امنیت و پایداری کم‌تر.</li></ul>
+<div class="exam"><b>نکتهٔ امتحانی:</b> بهترین رسانه از نظر سرعت، فاصله و مصونیت در برابر نویز: فیبر نوری.</div></section>
+
+<section id="s7"><h2>۷) معیارهای انتخاب شبکه</h2>
+<ul><li>تعداد کاربران و رایانه‌ها و امکان گسترش در آینده</li><li>بودجه و هزینهٔ نصب و نگهداری</li><li>سطح امنیت موردنیاز</li><li>سرعت و پهنای باند لازم</li><li>فاصلهٔ جغرافیایی و شرایط محیط</li><li>سهولت مدیریت و وجود نیروی متخصص</li></ul>
+<div class="exam"><b>نمونه:</b> اتاق کوچک با ۵ رایانه و بودجهٔ کم ← P2P با توپولوژی ستاره؛ مدرسه یا شرکت ← Client/Server ستاره (یا درختی) با سوئیچ.</div></section>
+
+<section id="quiz"><h2>آزمون پایانی</h2>
+<p>به همهٔ سؤال‌ها پاسخ دهید و دکمهٔ «ثبت پاسخ‌ها» را بزنید. هر سؤال ۲ نمره (جمع ۲۰).</p>
+<div id="qs"></div>
+<button id="sub">ثبت پاسخ‌ها</button> <button id="rst" style="background:var(--mut)">شروع دوباره</button>
+<div id="res"></div></section>
+</main>
+<footer>تهیه و تنظیم: <b>حسین حیدرنیا</b></footer>
+<script>
+const Q=[
+["هدف اصلی ایجاد شبکه رایانه‌ای چیست؟",["اشتراک منابع و تبادل اطلاعات","افزایش حافظه رم","کاهش مصرف برق","افزایش وضوح تصویر"],0],
+["آدرس فیزیکی (MAC) روی کدام قطعه قرار دارد؟",["مودم کابلی","کارت شبکه","کابل","پردازنده"],1],
+["IPv4 چند بیتی است؟",["۱۶","۶۴","۳۲","۱۲۸"],2],
+["در کدام مدل سرویس‌دهی مدیریت متمرکز و امنیت بیشتر است؟",["نظیر به نظیر","کارخواه/خدمت‌گزار","بی‌سیم","گذرگاه"],1],
+["شبکه‌ای که یک شهر را پوشش می‌دهد چه نام دارد؟",["PAN","LAN","MAN","WAN"],2],
+["رایج‌ترین توپولوژی در شبکه‌های محلی امروزی کدام است؟",["ستاره","گذرگاه","حلقه","هیچ‌کدام"],0],
+["در یک شبکهٔ مش کامل با ۶ گره، چند خط ارتباطی لازم است؟",["۶","۱۲","۱۵","۳۰"],2],
+["کدام رسانه در برابر نویز الکترومغناطیسی مصون است؟",["UTP","کواکسیال","فیبر نوری","هیچ‌کدام"],2],
+["شبکهٔ خصوصی یک سازمان با فناوری اینترنت چه نام دارد؟",["اینترانت","اینترنت","PAN","ماهواره"],0],
+["مثال مناسب شبکهٔ نظیر به نظیر کدام است؟",["شبکهٔ یک بانک","شبکهٔ خانگی چند رایانه","اینترنت","شبکهٔ ملی"],1]
+];
+const L="الف) ,ب) ,ج) ,د) ".split(",");
+const box=document.getElementById("qs"),res=document.getElementById("res");
+function build(){res.textContent="";box.innerHTML="";Q.forEach((q,i)=>{const d=document.createElement("div");d.className="q";let h="<p>"+(i+1)+". "+q[0]+"</p>";q[1].forEach((o,j)=>{h+='<label><input type="radio" name="q'+i+'" value="'+j+'"> '+L[j]+o+"</label>"});d.innerHTML=h;box.appendChild(d)})}
+document.getElementById("sub").onclick=()=>{let s=0;Q.forEach((q,i)=>{const ls=box.children[i].querySelectorAll("label");ls.forEach(l=>l.className="");const c=box.querySelector('input[name="q'+i+'"]:checked');ls[q[2]].className="ok";if(c){if(+c.value===q[2])s++;else ls[+c.value].className="bad"}});res.textContent="نمره شما: "+(s*2)+" از ۲۰"+(s>=8?" — عالی!":s>=5?" — خوب، کمی مرور کنید.":" — جزوه را دوباره مرور کنید.")};
+document.getElementById("rst").onclick=build;build();
+</script>
+</body>
+</html>
